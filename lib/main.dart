@@ -60,4 +60,10 @@ class _MyHomePageState extends State<MyHomePage> {
       duration: Duration(milliseconds: 400),
     );
   }
+  void insertItem(){
+    final index=1;
+    final element= Items(title: "ChocoPie", urlImage: "https://www.google.com.vn/url?sa=i&url=http%3A%2F%2Fteasymart.com%2Fsan-pham%2Fbanh-chocopie-hop-12-chiec%2F&psig=AOvVaw37lDkkJRmsEd_WDsXzrvHD&ust=1635845034842000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCgtuXr9vMCFQAAAAAdAAAAABAJ");
+    _list.insert(index, element);
+    listKey.currentState!.insertItem(index, duration: Duration(milliseconds: 200));
+  }
 }
